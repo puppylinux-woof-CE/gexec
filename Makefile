@@ -1,6 +1,7 @@
 CC = gcc
-LIBS = `pkg-config --libs gtk+-2.0`
-INCS = `pkg-config --cflags gtk+-2.0`
+GTK ?= gtk+-3.0
+LIBS = `pkg-config --libs $(GTK)`
+INCS = `pkg-config --cflags $(GTK)`
 #LIBS = `gtk-config --libs`
 #INCS = `gtk-config --cflags`
 
