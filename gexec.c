@@ -580,6 +580,7 @@ int main(int argc, char *argv[]) {
 	win_main = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 	gtk_window_set_title(GTK_WINDOW(win_main), "gExec");
 	gtk_window_set_default_size(GTK_WINDOW(win_main), 400, 77);
+	gtk_window_set_resizable(GTK_WINDOW(win_main), FALSE);
 	g_signal_connect(G_OBJECT(win_main),
 			"delete_event",
 			G_CALLBACK(ui_win_main_cb_delete_event),
